@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=EB+Garamond&family=Lato:ital,wght@0,900;1,100;1,900&family=Mukta:wght@800&family=Open+Sans:ital,wght@1,300&family=Rubik&family=Ubuntu:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=EB+Garamond&family=Lato:ital,wght@0,900;1,100;1,900&family=Mukta:wght@500;800&family=Open+Sans:ital,wght@1,300&family=Rubik&family=Ubuntu:ital,wght@1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 1000px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: green;
+}
+#navbar{
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    box-shadow: 3px 3px 15px black;
+}
+ul{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+li {
+    list-style: none;
+    padding: 10px;
+}
+li a{
+    text-decoration: none;
+    font-size: 23px;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+}
+.logo img{
+        position: absolute;
+        height: 41px;
+        left: 1rem;
+        top: 9px;
+}
+#home{
+    height: 510px;
+
+}
+#home::before{
+    content: '';
+    position: absolute;
+    background: url('bg.jpg') no-repeat center/cover;
+    width: 100%;
+    height: 490px;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+#home .main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 510px;
+}
+.main-container h1{
+    font-size: 63px;
+    color: black;
+    font-family: 'Baloo 2', cursive;
+
+}
+#home .main-container h2{
+    margin-top: 20px;
+    color: black;
+}
+.container{
+    max-width: 1200px;
+    margin:auto;
+    width: 90%;
+}
+.about-container{
+    font-size: 20px;
+    position: relative;
+    margin: auto;
+}
+
+.about-container span p{
+    font-size: 45px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.food-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.food-img img{
+    height: 23rem;
+    margin-top: 20px;
+}
+.Food-container-images-card{
+    display: flex;
+    flex-direction: row;
+    margin-top: 29px;
+}
+.food-images { 
+    display: block;
+    width: 100%;
+    margin: 8px;
+    overflow: hidden;
+}
+.food-images img{ 
+    height: 25rem;
+}
+#food{
+    text-align: center;
+}
+.food-container{
+    font-size: 36px;
+    margin-top: 35px;
+
+}
+.menu-item span p span{
+    position: absolute;
+    left: 0px;
+    color: white;
+    font-size: 22px;
+
+}
+.menu-item img{
+    height: 20rem;
+    border-radius: 10% 28%;
+    margin-bottom: 57px;
+    margin-top: 31px;
+}
+.menu-item span {
+    position: absolute;
+    margin: 62px;
+}
+.menu-item span p {
+    margin-top: 58px;
+}
+.contact-img img{
+    height: 22rem;
+
+}
+#contact{
+    font-size: 36px;
+}
+#menu h2{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 35px;
+}
+.contact-inner{
+    display: flex;
+
+}
+.form-control{
+    display: block;
+    margin: auto;
+    height: 370px;
+    box-shadow: 1px 4px 16px black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 407px;
+    margin: 7px;
+    height: 38px;
+    padding: 6px;
+    border-radius: 8px;
+    border: 0.1px solid black;
+}
+.button{
+    text-align: center;
+
+}
+button{
+    padding: 12px;
+    background-color: #0070ff;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: none;
+    width: 95px;
+}   
+footer{
+    background-color: black;
+    margin-top: 28px;
+}
+footer p{
+    text-align: center;
+    color: white;
+    padding: 13px;
+}

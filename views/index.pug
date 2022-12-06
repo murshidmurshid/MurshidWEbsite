@@ -1,0 +1,108 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Food delivery and Services
+  style     
+    include ../static/style.css
+    include ../static/style2.css
+  script(src='./script.js')
+  script(src='./app.js')
+nav#navbar
+  ul
+    .logo
+      img(src='as.svg' alt='')
+    li
+      a(href='#home') Home
+    li
+      a(href='#about') About
+    li
+      a(href='#food') Category
+    li
+      a(href='#menu') Menu
+    li
+      a(href='/contact') Contact
+    li
+      a(href='#service') Services
+section#home
+  .main-container
+    h1 Eat Right Food
+    h2 Eat healthy It&apos;s Good for health
+section#about
+  .about-container.container
+    | About us
+    span
+      p We have been making the food of Last for 10Years
+    p
+      | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit aliquid tenetur Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, eos?
+    p
+      | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt eligendi commodi voluptatibus illo quibusdam ratione maiores, recusandae accusamus eius voluptatum ea fugit voluptas!
+    p
+      | Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores adipisci quae maxime totam temporibus, earum omnis a animi provident? Corporis rerum saepe perferendis.
+    .food-img
+      img(src='food.jpg' alt='')
+section#food
+  .food-container.container
+    | Types of Food
+    .Food-container-images-card
+      #food-card1.food-images
+        img(src='./static/food-image/beef fry.jpg' alt='')
+      #food-card2.food-images
+        img(src='./static/food-image/fizza.jpg' alt='')
+      #food-card3.food-images
+        img(src='./static/food-image/burger.jpg' alt='')
+      #food-card4.food-images
+        img(src='./static/food-image/Tikka.jpg' alt='')
+section#menu
+  #menu-container.container
+    h2 Food Menu
+    #menu-card1.menu-item
+      img(src='./static/food-image/beef fry.jpg' alt='')
+      span
+        h1 Food item-1
+      span
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem distinctio quas labore ea. Autem consequuntur, rerum voluptas est assumenda distinctio placeat eius magni non libero qui. Consequatur, tempore aperiam?
+          span Price:300
+    #menu-card2.menu-item
+      img(src='./static/food-image/fizza.jpg' alt='')
+      span
+        h1 Food item-2
+      span
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem distinctio quas labore ea. Autem consequuntur, rerum voluptas est assumenda distinctio placeat eius magni non libero qui. Consequatur, tempore aperiam?
+          span Price:200
+    #menu-card3.menu-item
+      img(src='./static/food-image/Tikka.jpg' alt='')
+      span
+        h1 Food item-3
+      span
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem distinctio quas labore ea. Autem consequuntur, rerum voluptas est assumenda distinctio placeat eius magni non libero qui. Consequatur, tempore aperiam?
+          span Price:200
+    #menu-card4.menu-item
+      img(src='./static/food-image/burger.jpg' alt='')
+      span
+        h1 Food item-4 
+      span
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium rem distinctio quas labore ea. Autem consequuntur, rerum voluptas est assumenda distinctio placeat eius magni non libero qui. Consequatur, tempore aperiam?
+          span Price:500
+section#contact
+  .contact-container.container
+    | Contact Us
+    .contact-inner
+      .contact-img
+        img(src='food.jpg ' alt='')
+      .form-control
+        form(action='/contact' method='post')
+          input(type='text' name='name' for='name' placeholder='Enter Your name')
+          input(type='email' name='email' for='email' placeholder='Enter Your email')
+          input(type='age' name='age' for='age' placeholder='Enter Your age')
+          input(type='phone number' name='phone number' for='phone number' placeholder='Enter Your phone number')
+          .button
+            button(type='submit') Submit
+footer.foot
+  p CopyRights &copy;Murshid.com
+

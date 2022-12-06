@@ -1,0 +1,47 @@
+@media screen and (max-width: 992px) {
+    body {
+        background-color: blue;
+    }
+    #navbar{
+        position: relative;
+        height: 10rem;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    ul{
+        flex-direction: column;
+        background-color: red;
+        animation: Murshid 2s  ease  forwards ;
+    }
+    .Food-container-images-card{
+        flex-direction: column;
+    }
+    form input{
+        width: 22em;
+    }
+    .menu-item span{
+        position: relative;
+    }
+    .menu-item img {
+        height: 15rem;
+    }
+    .menu-item span p{
+        margin: 1px;
+    }
+    .food-images{
+        margin: 0;
+    }
+    .main-container{
+        margin-top: 100px;
+    }
+    @keyframes Murshid {
+        0%{
+            height: 0;
+
+        }
+        100%{
+            height: 20rem;
+        }
+        
+    }
+}
